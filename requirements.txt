@@ -1,0 +1,92 @@
+# ============================================================
+#  requirements.txt — Pranav Ingole Portfolio Website
+# ============================================================
+#  This is a STATIC frontend website.
+#  There are NO Python packages or npm modules to install.
+#  All external dependencies are loaded via CDN in index.html.
+# ============================================================
+
+
+# ─────────────────────────────────────────
+#  FRONTEND CDN DEPENDENCIES
+#  (referenced in index.html <head> & end of <body>)
+# ─────────────────────────────────────────
+
+# Bootstrap 5.3.2 — CSS Framework
+# CSS  → https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+# JS   → https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+# Used for: responsive grid, navbar, buttons, progress bars, form controls
+
+# Font Awesome 6.5.0 — Icon Library
+# CSS  → https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css
+# Used for: LinkedIn icon (fab fa-linkedin) in the hero section
+
+
+# ─────────────────────────────────────────
+#  PROJECT FILES (no install needed)
+# ─────────────────────────────────────────
+
+# index.html   — Main single-page HTML structure
+# style.css    — Custom styles (navbar, hero, cards, footer)
+# script.js    — Contact form submission handler (vanilla JS)
+# assets/      — Profile photo + 6 certificate images
+
+
+# ─────────────────────────────────────────
+#  BROWSER COMPATIBILITY
+# ─────────────────────────────────────────
+
+# Requires a modern browser supporting:
+#   • HTML5 semantic elements
+#   • CSS3 (Flexbox, linear-gradient, transition, border-radius)
+#   • ES6 JavaScript (addEventListener, preventDefault, innerText)
+#
+# Tested on:
+#   • Google Chrome   >= 90
+#   • Mozilla Firefox >= 88
+#   • Microsoft Edge  >= 90
+#   • Safari          >= 14
+#   • Mobile browsers (Android Chrome, iOS Safari)
+
+
+# ─────────────────────────────────────────
+#  INTERNET CONNECTION
+# ─────────────────────────────────────────
+
+# Required on first load to fetch CDN assets:
+#   • Bootstrap CSS & JS (jsDelivr CDN)
+#   • Font Awesome icons (Cloudflare CDN)
+#
+# After the browser caches these files, the site
+# works offline for locally stored assets (images, custom CSS/JS).
+
+
+# ─────────────────────────────────────────
+#  LOCAL DEVELOPMENT (optional)
+# ─────────────────────────────────────────
+
+# Option 1 — Python HTTP Server (recommended, zero install):
+#   python -m http.server 8000
+#   Open: http://localhost:8000
+
+# Option 2 — Node.js serve:
+#   npx serve .
+#   Open: http://localhost:3000
+
+# Option 3 — VS Code Live Server Extension:
+#   Install: "Live Server" by Ritwick Dey
+#   Right-click index.html → "Open with Live Server"
+
+# Note: Opening index.html directly via file:// may cause
+# some browsers to block local image loading. A local server
+# avoids this issue entirely.
+
+
+# ─────────────────────────────────────────
+#  DEPLOYMENT (no build step required)
+# ─────────────────────────────────────────
+
+# ✅ GitHub Pages  — free, deploy straight from repository
+# ✅ Netlify       — drag & drop the project folder
+# ✅ Vercel        — run: npx vercel
+# ✅ Any static file host (shared hosting, S3, Firebase Hosting)
